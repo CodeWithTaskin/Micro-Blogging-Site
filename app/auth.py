@@ -1,9 +1,12 @@
 from src import *
 from src.auth.signup import SignUp
+from src.auth.login import Login
 
-@app.route('/user/login')
+@app.route('/user/login', methods=['GET','POST'])
 def login():
-    return make_response({'message':'Successfully login'})
+    DATA = request.json
+    user_login = Login()
+    return user_login.login(data=DATA)
 
 @app.route('/user/signup', methods=['GET','POST'])
 def signup():
