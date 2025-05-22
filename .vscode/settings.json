@@ -1,0 +1,40 @@
+{
+  "sqltools.connections": [
+    {
+      "pgOptions": {
+        "ssl": {
+          "rejectUnauthorized": true
+        }
+      },
+      "previewLimit": 50,
+      "server": "barbed-ayeaye-6662.jxf.gcp-asia-southeast1.cockroachlabs.cloud",
+      "port": 26257,
+      "driver": "PostgreSQL",
+      "name": "CockroachDB Cloud",
+      "database": "defaultdb",
+      "username": "farjhan"
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "Flask Capston Proj",
+      "database": "flask_capston_proj",
+      "username": "postgres"
+    },
+    {
+      "mysqlOptions": {
+        "authProtocol": "default",
+        "enableSsl": "Disabled"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "Flask Capston Proj",
+      "database": "flask_capston_proj",
+      "username": "root"
+    }
+  ]
+}

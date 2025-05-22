@@ -1,0 +1,6 @@
+SQL_user = farjhan
+password = UJVRLTmU-Chjk7syk4Nzyg
+
+mkdir -p $env:appdata\postgresql\; Invoke-WebRequest -Uri https://cockroachlabs.cloud/clusters/a9417ad5-782e-4bbe-a82f-025fd8918911/cert -OutFile $env:appdata\postgresql\root.crt
+
+postgresql://farjhan:UJVRLTmU-Chjk7syk4Nzyg@barbed-ayeaye-6662.jxf.gcp-asia-southeast1.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full
